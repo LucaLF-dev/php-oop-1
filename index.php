@@ -1,5 +1,8 @@
 <?php
 
+require_once __DIR__ . '/models/Movie.php';
+require_once __DIR__ . '/models/Serie.php';
+
 class Production
 {
 
@@ -42,7 +45,7 @@ class Production
 
 $production1 = new Production('il Signore degli Anelli', 'inglese', '8');
 $production2 = new Production('il Signore degli Anelli, il ritorno del re', 'inglese', '8');
-$production3 = new Production('il Signore degli Anelli, le due torri ', 'italiano', '20');
+$production3 = new Production('il Signore degli Anelli, le due torri ', 'italiano', '7');
 
 
 $films = [
