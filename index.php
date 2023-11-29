@@ -59,13 +59,9 @@ foreach ($films as $film) {
             <?php echo $film->getRating() ?? 'il numero inserito non è compreso tra 0 e 10' ?>
         </p>
         <p>
-            <?php echo $film->getProfit() ?>
+            <?php echo $film->getProfit() ?? '' ?>
         </p>
-        
-        <?php if($film == $serie): ?>
-            <p> <?= $film->getSeason() ?></p>
-            <?php else: ?>
-            <p> <?= $film->getProfit() ?></p>
+       
     </div>
 
 <?php
