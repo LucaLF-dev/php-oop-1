@@ -15,7 +15,7 @@ class Movie extends Production {
     }
 
     public function getTitle() {
-        return 'SERIE:' . parent::getTitle();
+        return 'Film :' . ' ' . parent::getTitle();
     }
 
     public function setProfit($profit) {

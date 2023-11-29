@@ -10,12 +10,16 @@ class Serie extends Production {
     function __construct(string $_title, string $_language, $_rating, $_season) {
 
         parent::__construct($_title, $_language, $_rating);
-        $this->season= $_season;
+        $this->setSeason($_season);
     }
+ 
 
+    public function getTitle() {
+        return 'Serie :' . ' ' . parent::getTitle();
+    }
   
 
-    public function setProfit($season) {
+    public function setSeason($season) {
         if (is_numeric($season) ) {
             $this->season = intval($season);
         } else {
@@ -23,7 +27,7 @@ class Serie extends Production {
         }
     }
 
-    public function getProfit() {
+    public function getSeason() {
         return $this->season . ' ' . 'stagione';
     }
 
